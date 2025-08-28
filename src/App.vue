@@ -1,11 +1,11 @@
 <script setup>
 import StateView from './components/stateView.vue'
+import TableView from './components/tableView.vue'
 </script>
 
 <template>
-    <div class="container-fluid">
-        <div style="padding-top: 40px;">
-            <StateView />
-        </div>
-    </div>
+    <main>
+        <StateView />
+        <!-- <TableView /> -->
+    </main>
 </template>

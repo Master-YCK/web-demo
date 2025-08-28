@@ -23,33 +23,43 @@ function setUnActive(index) {
 }
 
 </script>
-
 <template>
-    <div class="container">
-        <ul class="nav nav-pills nav-fill mb-3">
-            <li class="nav-item" v-for="(item, index) in navItems" :key="index">
-                <a class="nav-link" :class="{ active: activeIndex === index, pass: item.stage === true }">
-                    {{ item.label }}
-                </a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade show active">
-                <div class="container d-flex justify-content-center align-items-center"
-                    style="height: 650px; width: 100%;">
-                    <p>Stage Content</p>
+    <main>
+        <div class="container-fluid" style="height: 100dvh;">
+            <div class="row">
+                <div class="text-center mt-3">
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item" v-for="(item, index) in navItems" :key="index">
+                            <a class="nav-link" :class="{ active: activeIndex === index, pass: item.stage === true }">
+                                {{ item.label }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tab-content mt-3">
+                    <div class="tab-pane fade show active">
+                        <div class="d-flex border rounded justify-content-center align-items-center"
+                            style="height: 650px; width: 100%;">
+                            <p>Stage Content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-between mt-3">
+                    <button class="btn btn-primary" @click="setUnActive(activeIndex)" :disabled="activeIndex === 0">
+                        Previous
+                    </button>
+                    <button class="btn btn-primary" @click="setActive(activeIndex)"
+                        :disabled="activeIndex === navItems.length">
+                        Next
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between mt-3">
-            <button class="btn btn-primary" @click="setUnActive(activeIndex)" :disabled="activeIndex === 0">
-                Previous
-            </button>
-            <button class="btn btn-primary" @click="setActive(activeIndex)" :disabled="activeIndex === navItems.length">
-                Next
-            </button>
-        </div>
-    </div>
+    </main>
 </template>
 
 <style scoped>
