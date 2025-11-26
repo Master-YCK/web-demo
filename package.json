@@ -3,6 +3,28 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "A Vue 3 + Vite demo project showcasing multi-stage navigation UI with Bootstrap 5 for responsive design",
+  "keywords": [
+    "vue",
+    "vue3",
+    "vite",
+    "bootstrap",
+    "bootstrap5",
+    "frontend",
+    "web-demo",
+    "ui-components",
+    "navigation",
+    "responsive-design"
+  ],
+  "author": "Master-YCK",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Master-YCK/web-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Master-YCK/web-demo/issues"
+  },
+  "homepage": "https://github.com/Master-YCK/web-demo#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
