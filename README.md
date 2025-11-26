@@ -1,6 +1,16 @@
 # Web Demo
 
+> A Vue 3 + Vite demo project showcasing multi-stage navigation UI with Bootstrap 5 for responsive design
+
 This is a simple Vue 3 + Vite demo project that showcases a multi-stage navigation UI using Bootstrap for styling.
+
+## 📋 About
+
+This repository demonstrates modern web development practices using Vue 3's Composition API, Vite's lightning-fast build tooling, and Bootstrap 5's responsive components. The project features a multi-stage navigation component that allows users to step through different stages with visual feedback for active and completed stages.
+
+### Topics
+
+`vue` `vue3` `vite` `bootstrap` `bootstrap5` `frontend` `web-demo` `ui-components` `navigation` `responsive-design`
 
 ## Features
 
