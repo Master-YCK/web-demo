@@ -73,4 +73,4 @@ The main component is [`StateView`](src/components/stateView.vue), which display
 
 ## License
 
-This project is for demonstration purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
